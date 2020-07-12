@@ -6,7 +6,6 @@ import path from 'path';
 
 // Rutas
 import router from './routes/router';
-import counter from './routes/counter.routes';
 
 const server = Server.instance;
 
@@ -22,7 +21,6 @@ server.app.use(cors({ origin: true, credentials: true }));
 
 // Rutas de MongoDB
 server.app.use('/', (express.static('public', { redirect: false })));
-server.app.use('/api', counter);
 server.app.use('/api', router);
 server.app.get('*', (req, res, next) => {
   res.sendFile(path.resolve('public/index.html'));
