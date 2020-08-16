@@ -41,6 +41,7 @@
         "@types/mongoose": "^5.7.31",
         "@types/socket.io": "^2.1.2",
         "@types/underscore": "^1.9.2",
+        "@types/pm2": "^",
         "typescript": "^3.9.5"
     }
 }
